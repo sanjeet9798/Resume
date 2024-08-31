@@ -1,0 +1,1724 @@
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Radio Canada Big", sans-serif;
+
+  /* font-family: "Ubuntu", sans-serif; */
+
+}
+#main{
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* //////////////////////////////////////////////////////////////////////// Nav Section ////////////////////////////////// */
+
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
+  border-bottom: 1px solid black;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 1;
+  
+}
+#navbar .logo_section{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 40px;
+}
+#navbar .logo_section .logo_img{
+  height: 50px;
+  border-radius: 50%;
+  mix-blend-mode:darken;
+
+
+} 
+#navbar .logo_section .logo_name{
+  font-size: 15px;
+  font-family:  sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-style: normal;   
+}
+
+#navbar .nav-list{
+  display: flex;
+  margin-right: 40px;
+  gap: 35px;
+}
+
+
+#navbar .nav-list a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  transition: .3s;
+}
+#navbar .nav-list a:hover{
+  color:#0ea0e3;
+
+}
+
+/* General mobile-first styles */
+@media (max-width: 768px) {
+  #navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+      padding: 10px 0;
+      /* background-color: aqua; */
+
+  }
+
+  #navbar .logo_section {
+      margin-left: 20px;
+  }
+
+  #navbar .logo_section .logo_img {
+      height: 40px;
+  }
+
+  #navbar .logo_section .logo_name {
+      font-size: 13px;
+  }
+
+  #navbar .nav-list {
+      margin-right: 20px;
+      gap: 20px;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;        
+  }
+
+
+  #navbar .nav-list a {
+      font-size: 13px;
+  }
+}
+
+/* Tablet and small laptop screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #navbar {
+      padding: 0 20px;
+
+  }
+
+  #navbar .logo_section {
+      margin-left: 30px;
+  }
+
+  #navbar .logo_section .logo_img {
+      height: 45px;
+  }
+
+  #navbar .logo_section .logo_name {
+      font-size: 14px;
+  }
+
+  #navbar .nav-list {
+      margin-right: 30px;
+      gap: 25px;
+  }
+
+  #navbar .nav-list a {
+      font-size: 14px;
+  }
+}
+
+/* Larger screens */
+@media (min-width: 1025px) {
+  #navbar {
+      padding: 0 40px;
+  }
+
+  #navbar .logo_section {
+      margin-left: 40px;
+  }
+
+  #navbar .logo_section .logo_img {
+      height: 50px;
+  }
+
+  #navbar .logo_section .logo_name {
+      font-size: 15px;
+  }
+
+  #navbar .nav-list {
+      margin-right: 40px;
+      gap: 35px;
+  }
+
+  #navbar .nav-list a {
+      font-size: 15px;
+  }
+}
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////// Home Section ////////////////////////////////// */
+
+#home_heros{
+  height: 100vh;
+  width: 100%;
+  /* border: 1px solid black; */
+  background:  url(./27230.jpg) no-repeat center bottom ;
+  /* background: url("https://i.pinimg.com/564x/81/1a/ba/811abaf3120807844c7572e87dd4440d.jpg"); */
+  background-size: cover;
+  filter: aturate(0%) ;
+}
+.home_contents{
+  display: flex;
+  flex-wrap: wrap;  
+  height: 50vh;
+  width: 50vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  padding:10px;
+  /* border: 1px solid black; */
+}
+.heading{
+  font-family: "Radio Canada Big", sans-serif;
+  font-weight: 900;
+  color: #fff;
+  width: 100%;
+  margin-left: 22%;
+  font-size: 50px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+.primary_text{
+  font-family: "Radio Canada Big", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #e8e7e7d1;
+
+}
+
+.text{
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #61e1e1;
+  font-family: "Radio Canada Big", sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 5s steps(40,end) infinite;
+}
+@keyframes typing{
+  from{
+    width: 0;
+  }to{
+    width: 70%;
+  }
+}
+.primary_text{
+  font-size: larger;
+  text-align: center;
+
+}
+
+
+/* ****************home-scrollbtn************************ */
+
+.scroll-downs {
+  position: absolute;
+  top: 85vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+  .home_contents {
+    height: 60vh;
+    width: 60vw;
+  }
+
+  .heading {
+    font-size: 38px;
+    margin-left: 18%;
+
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .scroll-downs {
+    top: 80vh;
+  }
+}
+@media (max-width:415px){
+  .primary_text{
+    font-size: 15px;
+
+  }
+  .primary_text span{
+    display: none;
+  }
+
+
+}
+
+
+@media (max-width: 768px) {
+  .home_contents {
+    height: 70vh;
+    width: 70vw;
+  }
+
+  .heading {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 32px;
+    margin-left: 10%;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .scroll-downs {
+    top: 80vh;
+  }
+
+  .home_heros_socialsbtn {
+    margin-top: 20%;
+    font-size: 20px;
+    transform: translateY(-50%);
+
+  }
+}
+/* *******************home section social icons*************************** */
+
+
+.home_heros_socialsbtn{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  font-size: 22px;
+  border: 2px solid #eee;
+  border-bottom: none;
+  transform: translateY(-50%);
+}
+
+.social_icons_container{
+  display: block;
+  width: 100%;
+  padding: 0.9vw;
+  border-bottom:  2px solid #eee;
+  cursor: pointer;
+  transition:.3s;
+
+}
+.social_icons_container:hover{
+  background-color: #eeeeee22;
+}
+
+
+.social_icons{
+  color: #eeeeee;
+}
+
+
+
+
+.btn-60,
+.btn-60 *,
+.btn-60 :after,
+.btn-60 :before,
+.btn-60:after,
+.btn-60:before {
+border: 0 solid;
+box-sizing: border-box;
+}
+.btn-60 {
+-webkit-tap-highlight-color: 
+transparent;
+/* -webkit-appearance: button; */
+background-color: #000;
+background-image: none;
+color:#fff;
+cursor: pointer;
+font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+  Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+  Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+font-size: 100%;
+line-height: 1.5;
+margin: 0;
+/* -webkit-mask-image: -webkit-radial-gradient(#000, #fff); */
+padding: 0;
+}
+.btn-60:disabled {
+cursor: default;
+}
+.btn-60:-moz-focusring {
+outline: auto;
+}
+.btn-60 svg {
+display: block;
+vertical-align: middle;
+}
+.btn-60 [hidden] {
+display: none;
+}
+.btn-60 {
+background: none;
+box-sizing: border-box;
+color: #000;
+/* width: 100%; */
+
+display: block;
+letter-spacing: 2px;
+font-weight: 700;
+/* -webkit-mask-image: none; */
+padding: 1.5rem 4rem;
+position: relative;
+text-transform: uppercase;
+}
+.btn-60 span {
+background: #fff;
+border: 1px solid;
+border-radius: 999px;
+display: grid;
+inset: 0;
+place-items: center;
+pointer-events: none;
+position: absolute;
+}
+.btn-60:hover span {
+-webkit-animation: jello 0.8s;
+animation: jello 0.8s;
+}
+@-webkit-keyframes jello {
+0%,
+11.1%,
+to {
+  transform: translateZ(0);
+}
+22.2% {
+  transform: skewX(-12.5deg) skewY(-12.5deg);
+}
+33.3% {
+  transform: skewX(6.25deg) skewY(6.25deg);
+}
+44.4% {
+  transform: skewX(-3.125deg) skewY(-3.125deg);
+}
+55.5% {
+  transform: skewX(1.5625deg) skewY(1.5625deg);
+}
+66.6% {
+  transform: skewX(-0.78125deg) skewY(-0.78125deg);
+}
+77.7% {
+  transform: skewX(0.390625deg) skewY(0.390625deg);
+}
+88.8% {
+  transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+}
+}
+@keyframes jello {
+0%,
+11.1%,
+to {
+  transform: translateZ(0);
+}
+22.2% {
+  transform: skewX(-12.5deg) skewY(-12.5deg);
+}
+33.3% {
+  transform: skewX(6.25deg) skewY(6.25deg);
+}
+44.4% {
+  transform: skewX(-3.125deg) skewY(-3.125deg);
+}
+55.5% {
+  transform: skewX(1.5625deg) skewY(1.5625deg);
+}
+66.6% {
+  transform: skewX(-0.78125deg) skewY(-0.78125deg);
+}
+77.7% {
+  transform: skewX(0.390625deg) skewY(0.390625deg);
+}
+88.8% {
+  transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+}
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////About Section////////////////////////////////// */
+
+
+#about_heros_section{
+  /* display: block; */
+  height: 100vh;
+  width: 100%;
+  background: #eaeaea56;
+  padding: 11rem 0;
+}
+
+.about_main_container{
+    max-width: 120rem;
+    margin: auto;
+    width: 92%;
+    box-sizing: border-box;
+    
+}
+.about_heading{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+}
+
+.about_main_heading{
+  font-family: "Radio Canada Big", sans-serif;
+  letter-spacing: 1px;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+.about_sub_heading{
+  font-size: large;
+  font-family: "Radio Canada Big", sans-serif;
+  text-align: center;
+  color: #8b8989b0;
+  font-weight: 100;
+
+}
+
+.about_contant{
+  display: flex;
+  height: 50vh;
+  width: auto;
+  margin-top: 10vh;
+
+}
+
+.about_contant_main{
+  height: 50vh;
+  width: 50%;
+  padding-left: 4vw;
+}
+
+.about_contant_titel{
+  font-family: "Radio Canada Big", sans-serif;
+  display: block;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 3rem
+  
+}
+
+
+.about_contant_detials{
+  box-sizing: border-box;
+  position: relative;
+
+}
+
+.about_contant_detials_para{
+  font-family: "Radio Canada Big", sans-serif;
+  text-align: left;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  /* font-size: 20px; */
+  color: grey;
+  width: 100%;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+
+
+.btn-70,
+.btn-70 *,
+.btn-70 :after,
+.btn-70 :before,
+.btn-70:after,
+.btn-70:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-70 {
+  -webkit-tap-highlight-color: 
+transparent;
+  -webkit-appearance: button;
+  background-color: #3381C7;
+  background-image: none;
+  color:#fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin-top: 30px;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-70 a{
+  color: white;
+  text-decoration: none;
+}
+.btn-70:disabled {
+  cursor: default;
+}
+.btn-70:-moz-focusring {
+  outline: auto;
+}
+.btn-70 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-70 [hidden] {
+  display: none;
+}
+.btn-70 {
+  box-shadow: inset 0 0 0 2px 
+#fff;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 800;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: color 0.1s linear;
+}
+.btn-70:after,
+.btn-70:before {
+  content: "";
+  position: absolute;
+}
+.btn-70:before {
+  border-bottom: var(--border);
+  border-top: var(--border);
+  height: 100%;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+.btn-70:hover:before {
+  --border: 4px solid #000;
+  -webkit-animation: border-top-and-bottom 1s forwards;
+  animation: border-top-and-bottom 1s forwards;
+}
+.btn-70:after {
+  border-left: var(--border);
+  border-right: var(--border);
+  bottom: 50%;
+  right: 0;
+  transform: translateY(50%);
+  width: 100%;
+  z-index: -1;
+}
+.btn-70:hover:after {
+  --border: 4px solid 
+#000;
+  -webkit-animation: border-right-and-left 1s forwards;
+  animation: border-right-and-left 1s forwards;
+}
+@-webkit-keyframes border-top-and-bottom {
+  0% {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes border-top-and-bottom {
+  0% {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@-webkit-keyframes border-right-and-left {
+  0% {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+@keyframes border-right-and-left {
+  0% {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+
+
+
+
+
+.about_content_skills{
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  width: 50%;
+  margin-left: 30px;
+
+}
+
+.about_contant_skills_titel{
+  font-family: "Radio Canada Big", sans-serif;
+  display: block;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 3rem;
+};
+
+
+.my_skillss{
+  display: flex;
+  position: relative;
+  
+}
+
+.skills_boxx{
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 10px;
+
+}
+.mySkills__skill{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 5.5vh;
+  width: auto ;
+  font-weight: 500;
+  color: #777;
+  border-radius: 3px;
+  background: rgba(153, 153, 153, 0.2);;
+  font-family: "Radio Canada Big", sans-serif;
+  
+}
+
+
+
+
+/* Media Query for screens with a max width of 768px */
+
+@media (max-width: 768px) {
+  
+  #about_heros_section {
+    height: auto;
+    padding: 5rem 0;
+  }
+
+  .about_main_container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .about_heading {
+    gap: 5px;
+  }
+
+  .about_main_heading {
+    font-size: 28px;
+  }
+
+  .about_sub_heading {
+    font-size: medium;
+  }
+
+  .about_contant {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .about_contant_main,
+  .about_content_skills {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .about_contant_titel,
+  .about_contant_skills_titel {
+    font-size: 24px;
+    margin-bottom: 2rem;
+  }
+
+  .btn-70 {
+    padding: 1rem 2rem;
+  }
+
+  .my_skillss {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skills_boxx {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .mySkills__skill {
+    padding: 15px;
+    height: auto;
+    font-size: 14px;
+  }
+
+  #project_section, #contact_section {
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#project_section{
+  height: auto;
+  width: 100%;
+  background: #e8e8e8
+  ;
+}
+
+
+.project_main_container{
+  width: 100%;
+  box-sizing: border-box;
+
+
+
+}
+
+.project_heading{
+  margin-top: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.project_main_heading{
+  font-family: "Radio Canada Big", sans-serif;
+  letter-spacing: 1px;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+.project_sub_heading{
+  font-size: large;
+  font-family: "Radio Canada Big", sans-serif;
+  text-align: center;
+  color: #8b8989d4;
+  font-weight: 100;
+
+}
+
+
+.project__div{
+  display: flex;
+  margin-top: 8%;
+  margin-bottom: 11rem;
+  height: 50vh;
+  width: 100%;
+}
+
+
+.project_div_image{
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 50%;
+}
+
+.project_img{
+  display: block;
+  object-fit: cover;
+  height: 400px;
+  margin-left: 5vw;
+  mix-blend-mode: darken;
+  /* box-shadow: 10px 10px 10px#000; */
+
+}
+
+
+
+.project_div_img__details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 50vh;
+  width: 50%;
+  padding: 4rem;
+}
+
+.project_div_img__details_tittle{
+  display: block;
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  font-family: "Radio Canada Big", sans-serif;
+}
+.project_div_img__details_para{
+  font-size: 15px;
+    color: grey;
+    max-width: 60rem;
+    line-height: 1.7;
+    margin-bottom: 48px;
+    font-family: "Radio Canada Big", sans-serif;
+
+}
+
+
+
+
+
+
+
+
+/* From Uiverse.io by adamgiebl */ 
+.button-67 {
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 50px;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: .5px solid #e8e8e8;
+  transition: all 0.3s;
+  /* background-color: #FFFFFF; */
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.button-67:hover {
+ /* From Uiverse.io by adamgiebl */ 
+button {
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.button-67:hover {
+  border: 1px solid white;
+}
+
+.button-67:active {
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+}
+}
+
+.button-67:active {
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+}
+
+.button-67 a{
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+  .button-67 {
+    padding: 24px;
+  }
+}
+
+
+
+
+
+
+
+
+/* Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+  .project_heading {
+    margin-top: 3%;
+  }
+
+  .project_div_img__details{
+    display: flex;
+    align-items: center;
+  }
+  .project_div_img__details_para{
+    text-align: center;
+    
+  }
+
+  
+  .project_main_heading {
+    font-size: 24px;
+  }
+  
+  .project_sub_heading {
+    font-size: small;
+    
+  }
+  
+  .project__div {
+    flex-direction: column;
+    margin-top: 3%;
+    margin-bottom: 1rem;
+    height: auto;
+  }
+  
+  .project_div_image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project_img {
+    height: auto;
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .project_div_img__details {
+    width: 100%;
+    padding: 2rem;
+  }
+  
+  .project_div_img__details_tittle {
+    font-size: 1.8rem;
+  }
+  
+  .project_div_img__details_para {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  
+  .button-67 {
+    height: auto;
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .project_heading {
+    margin-top: 5%;
+  }
+  
+  .project_div_img__details{
+    display: flex;
+    align-items: center;
+  }
+  .project_div_img__details_para{
+    text-align: center;
+    
+  }
+  
+  .project_main_heading {
+    font-size: 28px;
+  }
+  
+  .project_sub_heading {
+    font-size: medium;
+  }
+  
+  .project__div {
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 2rem;
+    height: auto;
+  }
+  
+  .project_div_image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project_img {
+    height: auto;
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .project_div_img__details {
+    width: 100%;
+    padding: 2rem;
+  }
+  
+  .project_div_img__details_tittle {
+    font-size: 2rem;
+  }
+  
+  .project_div_img__details_para {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  
+  .button-67 {
+    height: auto;
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1179px){
+  .project_div_image {
+    /* width: 30%; */
+    height: 50px;
+  }
+  .project_img{
+    height: 100px;
+
+  }
+
+}
+
+/* Desktop Tablets (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .project_heading {
+    margin-top: 7%;
+  }
+  
+  .project_main_heading {
+    font-size: 20px;
+  }
+  
+  
+  /* .project_div_img__details{
+    display: flex;
+    align-items: center;
+  }
+  .project_div_img__details_para{
+    text-align: center;
+    
+  } */
+
+  
+  .project_sub_heading {
+    font-size: medium;
+  }
+  
+  .project__div {
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 9rem;
+    height: 50vh;
+  }
+  
+  .project_div_image {
+    width: 50%;
+    height: 50vh;
+    padding: 10px;
+  }
+  
+  .project_img {
+    height: 280px;
+    /* width: 100%; */
+    margin-left: 0;
+  }
+  
+  .project_div_img__details {
+    width: 50%;
+    padding: 4rem;
+  }
+  
+  .project_div_img__details_tittle {
+    font-size: 2.4rem;
+  }
+  
+  .project_div_img__details_para {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+  
+  .button-67 {
+    height: 40px;
+    padding: 15px;
+    font-size: .8rem;
+  }
+}
+
+/* Large Desktop (1025px and above) */
+@media (min-width: 1025px) {
+  .project_heading {
+    margin-top: 8%;
+  }
+  
+  .project_main_heading {
+    font-size: 35px;
+  }
+  
+  .project_sub_heading {
+    font-size: large;
+  }
+  
+  .project__div {
+    flex-direction: row;
+    margin-top: 8%;
+    margin-bottom: 11rem;
+    height: 50vh;
+  }
+  
+  .project_div_image {
+    width: 50%;
+    height: 50vh;
+  }
+  
+  .project_img {
+    height: 400px;
+    margin-left: 5vw;
+  }
+  
+  .project_div_img__details {
+    width: 50%;
+    padding: 4rem;
+  }
+  
+  .project_div_img__details_tittle {
+    font-size: 2.8rem;
+  }
+  
+  .project_div_img__details_para {
+    font-size: 15px;
+    margin-bottom: 48px;
+  }
+  
+  .button-67 {
+    height: 50px;
+    padding: 15px;
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------contact section------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+#contact_section{
+  display: flex;
+  height: auto;
+  width: 100%;
+  /* border: 1px solid black; */
+  /* background-color: skyblue; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url(./free-photo-black-grunge-abstract-background-pattern-wallpaper.jpg); */
+}
+
+
+
+.contact_page_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  border-radius: 5px;
+  margin: 5rem auto 0 auto;
+  height: 90vh;
+  width: 50%;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.contact_form{
+  position: relative;
+  height: 80vh;
+  width: 85%;
+}
+
+.form_name_details{
+height: auto;
+display: flex ;
+flex-direction: column;
+margin-bottom: 25px;
+
+}
+
+.form_name_heading{
+  padding: 10px;
+  color: #484747;
+
+}
+
+.form_name_input{
+    margin: 5px;
+    height: 60px;
+    color: #333;
+    border: none ;
+    font-size: 19px;
+    background: #f0f0f0;
+    border-radius: 6px;
+    font-weight: 500;
+    padding-left: 25px;
+}
+.form_text_area{
+  margin: 5px;
+  padding: 8px 10px;
+  font-size: large;
+  background: #f0f0f0;
+}
+
+.form_text_area::placeholder{
+font-size: large;
+}
+
+
+
+
+.btn-3 {
+  scale: 0.9;
+  position: absolute;
+  overflow: hidden;
+  border: 1px solid gray;
+  color: #18181a;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 15px;
+  padding: 19px 18px 19px;
+  width: 160px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 70px;
+  bottom: 20px;
+  right: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn-3 span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.btn-3 span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+
+.btn_text{
+  color: black;
+  font-weight: 700;
+}
+
+.btn-3:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3381C7;
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+
+.btn-3:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+
+.btn-3:hover span:last-child {
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------Footer--------------------------> */
+
+
+
+
+
+
+
+
+
+
+
+
+.footer_divv{
+  display: flex;
+  height: 50vh;
+  width: 100%;
+  border: 2px solid black;
+  box-sizing: border-box;
+  background-size: cover;
+  background-image: url(./free-photo-black-grunge-abstract-background-pattern-wallpaper.jpg);
+  justify-content: center;
+
+}
+
+.footer_section{
+  height: 50vh;
+  width: 90%;
+  padding: 10vh;
+}
+.footer_element_container{
+  display: flex;
+  height: 20vh;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer_element_container_child_01{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3vh;
+  color: white;
+  height: 20vh ;
+
+
+}
+.footer_element_container_child_01_tittle{
+  letter-spacing: 2px;
+  font-size: larger;
+  text-transform: uppercase;
+
+}
+
+.footer_element_container_child_01_short_para{
+  font-size: 14px;
+  line-height: 25px;
+
+}
+
+
+
+
+.footer_element_container_child_02{
+  height: 20vh ;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  justify-content: center;
+
+}
+
+
+.footer_element_container_child_02_tittle{
+  letter-spacing: 2px;
+  font-size: larger;
+  text-transform: uppercase;
+}
+
+.footer_social_icons{
+  display: flex;
+  gap: 15px;
+}
+
+.footer_icons{
+  color: white;
+  font-size: 21px;
+  transition: .3s;
+}
+.footer_icons:hover{
+  color: #0ea0e3;
+}
+
+
+
+/* --------------------------------------------------------------------------Footer Link-------------------------> */
+
+
+
+.footer_link{
+  margin-top: 60px;
+  border-top: 1px solid gray;
+  height: 5vh;
+  display: flex;
+  align-items: flex-end ;
+color: white;
+font-size: small;
+justify-content: center;
+}
+.footer_link_para{
+  letter-spacing: .5px;
+  font-weight: 100;
+}
+.footer_link_para a{
+color: #4b96d8;
+font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+/* For tablets (width between 768px and 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .footer_divv {
+    height: 60vh;
+  }
+
+  .footer_section {
+    width: 95%;
+    padding: 5vh;
+  }
+
+  .footer_element_container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .footer_element_container_child_01,
+  .footer_element_container_child_02 {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer_element_container_child_01_tittle,
+  .footer_element_container_child_02_tittle {
+    font-size: medium;
+  }
+
+  .footer_element_container_child_01_short_para {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .footer_icons {
+    font-size: 18px;
+  }
+
+  .footer_link {
+    height: 4vh;
+  }
+
+  .footer_link_para {
+    font-size: smaller;
+  }
+}
+
+
+
+
+/* For mobile devices (width below 768px) */
+@media (max-width: 767px) {
+  .footer_divv {
+    height: 60vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh;
+  }
+
+  .footer_section {
+    width: 100%;
+    padding: 2vh;
+  }
+
+  .footer_element_container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .footer_element_container_child_01,
+  .footer_element_container_child_02 {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer_element_container_child_01_tittle,
+  .footer_element_container_child_02_tittle {
+    font-size: small;
+  }
+
+  .footer_element_container_child_01_short_para {
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  .footer_icons {
+    font-size: 16px;
+  }
+
+  .footer_link {
+    height: 3vh;
+  }
+
+  .footer_link_para {
+    font-size: x-small;
+  }
+}
+
+
+
+
+
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: #bcb8b881;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background:linear-gradient(#0ea0e3,#fdfeff,#0ea0e3);
+  border-radius: 10px;
+}
